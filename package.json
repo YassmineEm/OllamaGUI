@@ -1,0 +1,22 @@
+{
+  "name": "ollama-chat-lab",
+  "version": "2.0.0",
+  "description": "Interface GUI pour Ollama avec WebSocket & SSE",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "start-sse": "node server-sse.js",
+    "dev": "node --watch server.js",
+    "test": "curl http://localhost:3000/api/test",
+    "install-all": "npm install express@4.18.2 cors node-fetch ws"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "node-fetch": "^3.3.2",
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
